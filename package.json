@@ -1,10 +1,15 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "blog",
+  "description": "my-blog",
+  "license": "MIT",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jdkfx/blog.git"
+  },
   "scripts": {
     "dev": "sapper dev",
-    "build": "sapper build --legacy",
+    "build": "sapper build",
     "export": "sapper export",
     "start": "node __sapper__/build"
   },
@@ -31,7 +36,6 @@
     "rollup-plugin-svelte": "^7.0.0",
     "rollup-plugin-terser": "^7.0.0",
     "sapper": "^0.28.0",
-    "svelte": "^3.17.3",
-    "vercel-sapper": "^0.44.0"
+    "svelte": "^3.17.3"
   }
 }

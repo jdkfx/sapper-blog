@@ -7,10 +7,10 @@
 // we don't want to create an `/blog/posts` route — the leading
 // underscore tells Sapper not to do that.
 
-const fs = require("fs");
-const fm = require("front-matter");
-const marked = require("marked");
-const hljs = require("highlight.js");
+import fs from "fs";
+import fm from "front-matter";
+import marked from "marked";
+import hljs from "highlight.js";
 
 const articles = fs.readdirSync("articles");
 
