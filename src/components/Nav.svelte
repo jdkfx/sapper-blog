@@ -4,57 +4,60 @@
 
 <style>
 	nav {
-		border-bottom: 1px solid rgba(255,62,0,0.1);
-		font-weight: 300;
-		padding: 0 1em;
+		background-color: #ff6316;
+		font-family: "MS Pゴシック",sans-serif;
+		height: 100%;
+		position: fixed;
+    width: 20%;
+    z-index: 30;
 	}
 
 	ul {
+		list-style: none;
 		margin: 0;
 		padding: 0;
-	}
-
-	/* clearfix */
-	ul::after {
-		content: '';
-		display: block;
-		clear: both;
+		padding-top: 50px;
 	}
 
 	li {
+		display: inline;
+		font-style: italic;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	li a {
+		color: #ffffff;
 		display: block;
-		float: left;
-	}
-
-	[aria-current] {
-		position: relative;
-		display: inline-block;
-	}
-
-	[aria-current]::after {
-		position: absolute;
-		content: '';
-		width: calc(100% - 1em);
-		height: 2px;
-		background-color: rgb(255,62,0);
-		display: block;
-		bottom: -1px;
-	}
-
-	a {
+		margin: 2px 0px;
+		padding: 3px 10px;
 		text-decoration: none;
-		padding: 1em 0.5em;
-		display: block;
+	}
+
+	.my-link {
+		/* margin: 0 auto; */
+		text-align: center;
+	}
+
+	.fa-twitter,.fa-github {
+		color: #ffffff;
+		padding: 0.3em;
 	}
 </style>
 
 <nav>
 	<ul>
-		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">home</a></li>
-		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">about</a></li>
+		<li><a style="font-size: 2em;font-weight: bold;" aria-current="{segment === undefined ? 'page' : undefined}" href=".">jdkfx.com</a></li>
+		<li><a style="font-size: 1.8em;" aria-current="{segment === 'about' ? 'page' : undefined}" href="about">About</a></li>
 
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">blog</a></li>
+		<li><a style="font-size: 1.8em;" rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">Blog</a></li>
+		<div class="my-link">
+			<a href="https://twitter.com/jdkfx" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter fa-3x"></i></a>
+			<a href="https://github.com/jdkfx" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-3x"></i></a>
+		</div>
 	</ul>
 </nav>
