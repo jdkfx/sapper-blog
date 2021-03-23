@@ -16,7 +16,7 @@ const articles = fs.readdirSync("articles");
 
 marked.setOptions({
 	highlight: function (code, lang) {
-		return hljs.highlight(lang, code).value;
+		return hljs.highlightAuto(code, [lang]).value;
 	}
 });
 
