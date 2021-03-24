@@ -1,6 +1,7 @@
 ---
 title: "New Article Title"
 slug: "new-article-link"
+date: 2021-03-01 00:10
 ---
 
 ## New Article!!
