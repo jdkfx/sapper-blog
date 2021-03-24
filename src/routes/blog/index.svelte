@@ -24,6 +24,24 @@
 		font-weight: bold;
 		list-style: none;
 	}
+
+	.post {
+		margin: 0;
+		padding: 0;
+	}
+
+	.post h3 {
+		font-size: 1em;
+		font-weight: bold;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	.post p {
+		font-size: 0.8em;
+	}
 </style>
 
 <svelte:head>
@@ -36,6 +54,11 @@
 				tell Sapper to load the data for the page as soon as
 				the user hovers over the link or taps it, instead of
 				waiting for the 'click' event -->
-		<li><a rel="prefetch" href="blog/{post.slug}">{post.title}</a> - {posts.date}</li>
+		<li>
+			<div class="post">
+				<h3><a rel="prefetch" href="blog/{post.slug}">{post.title}</a></h3>
+				<p>{post.date}</p>
+			</div>
+		</li>
 	{/each}
 </ul>
