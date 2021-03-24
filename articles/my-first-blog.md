@@ -1,7 +1,7 @@
 ---
 title: "New Article Title"
 slug: "new-article-link"
-date: 2021-03-01 00:10
+date: "2021-03-01"
 ---
 
 ## New Article!!
