@@ -58,6 +58,7 @@
 </svelte:head>
 
 <h1>{post.title}</h1>
+<h1>{post.date}</h1>
 
 <div class="content">
 	{@html post.html}
