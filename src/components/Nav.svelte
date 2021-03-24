@@ -28,7 +28,7 @@
 		text-align: center;
 	}
 
-	li a {
+	li a, .top-php {
 		color: #ffffff;
 		display: block;
 		margin: 2px 0px;
@@ -49,12 +49,13 @@
 
 <nav>
 	<ul>
+		<li class="top-php" style="font-color: #ffffff;font-size: 2em;font-weight: bold;">&lt;?php</li>
 		<li><a style="font-size: 2em;font-weight: bold;" aria-current="{segment === undefined ? 'page' : undefined}" href=".">jdkfx.com</a></li>
-		<li><a style="font-size: 1.8em;" aria-current="{segment === 'about' ? 'page' : undefined}" href="about">About</a></li>
+		<li><a style="font-size: 1.8em;" aria-current="{segment === 'about' ? 'page' : undefined}" href="about">$about</a></li>
 
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a style="font-size: 1.8em;" rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">Blog</a></li>
+		<li><a style="font-size: 1.8em;" rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">$blogs</a></li>
 		<div class="my-link">
 			<a href="https://twitter.com/jdkfx" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter fa-3x"></i></a>
 			<a href="https://github.com/jdkfx" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-3x"></i></a>
