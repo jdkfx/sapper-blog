@@ -18,14 +18,6 @@
 </script>
 
 <style>
-	/*
-		By default, CSS is locally scoped to the component,
-		and any unused styles are dead-code-eliminated.
-		In this page, Svelte can't know which elements are
-		going to appear inside the {{{post.html}}} block,
-		so we have to use the :global(...) modifier to target
-		all elements inside .content
-	*/
 	.content :global(h2) {
 		font-size: 1.4em;
 		font-weight: 500;
@@ -51,15 +43,39 @@
 	.content :global(li) {
 		margin: 0 0 0.5em 0;
 	}
+
+	.article-top {
+		margin-bottom: 2em;
+	}
+
+	.article-top h1 {
+		font-size: 2em;
+		font-style: italic;
+		font-weight: bold;
+	}
+
+	.article-top h3 {
+		font-style: italic;
+		font-weight: bold;
+	}
+
+	@media screen and ( max-width:480px )
+	{
+		.content {
+			margin-top: 35%;
+		}
+	}
 </style>
 
 <svelte:head>
 	<title>{post.title}</title>
 </svelte:head>
 
-<h1>{post.title}</h1>
-<h1>{post.date}</h1>
-
 <div class="content">
+	<div class="article-top">
+		<h1>{post.title}</h1>
+		<h3>{post.date}</h3>
+	</div>
+
 	{@html post.html}
 </div>
