@@ -67,7 +67,7 @@
 		nav {
 			box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .2);
 			font-size: 1em ;
-			height: 15%;
+			height: 17%;
 			position: fixed;
 			width: 100%;
 			z-index: 10;
@@ -97,7 +97,6 @@
 	<ul>
 		<li class="top-php">&lt;?php</li>
 		<li class="title"><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">jdkfx.com</a></li>
-		<li><a class="size18" aria-current="{segment === 'about' ? 'page' : undefined}" href="about">$about</a></li>
 
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->

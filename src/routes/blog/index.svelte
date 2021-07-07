@@ -51,6 +51,12 @@
 		.content {
 			margin-top: 35%;
 		}
+
+		.post h1 a {
+			font-size: 0.5em;
+			font-style: italic;
+			font-weight: bold;
+		}
 	}
 </style>
 
