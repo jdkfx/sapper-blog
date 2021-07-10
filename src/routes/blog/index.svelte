@@ -32,7 +32,7 @@
 	}
 
 	.post h1 a {
-		font-size: 0.8em;
+		font-size: 0.7em;
 		font-style: italic;
 		font-weight: bold;
 	}
@@ -53,7 +53,7 @@
 		}
 
 		.post h1 a {
-			font-size: 0.5em;
+			font-size: 0.6em;
 			font-style: italic;
 			font-weight: bold;
 		}

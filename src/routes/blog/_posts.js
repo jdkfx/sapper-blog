@@ -13,15 +13,9 @@ import fm from "front-matter";
 import marked from "marked";
 import hljs from "highlight.js";
 
-// marked.setOptions({
-// 	highlight: function (code, lang) {
-// 		return hljs.highlightAuto(code, [lang]).value;
-// 	}
-// });
-
 const renderer = new marked.Renderer();
 renderer.code = (code, lang)=>{
-	return `<pre><code class="${lang} hljs">${hljs.highlightAuto(code, [lang]).value}</code></pre>`;
+	return `<pre style="background-color: #7b5544;"><code class="${lang} hljs">${hljs.highlightAuto(code, [lang]).value}</code></pre>`;
 }
 marked.setOptions({
 	breaks: true,
@@ -56,19 +50,5 @@ try {
 posts.sort((a,b)=>{
 	return a.date === b.date ? 0 : (a.date < b.date ? 1 : -1);
 });
-
-// const posts = [
-// 	{
-// 		title: 'How can I get involved?',
-// 		slug: 'how-can-i-get-involved',
-// 		html: `
-// 			<p>We're so glad you asked! Come on over to the <a href='https://github.com/sveltejs/svelte'>Svelte</a> and <a href='https://github.com/sveltejs/sapper'>Sapper</a> repos, and join us in the <a href='https://svelte.dev/chat'>Discord chatroom</a>. Everyone is welcome, especially you!</p>
-// 		`
-// 	}
-// ];
-
-// posts.forEach(post => {
-// 	post.html = post.html.replace(/^\t{3}/gm, '');
-// });
 
 export default posts;

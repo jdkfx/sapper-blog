@@ -29,7 +29,7 @@ date: "2021-07-10"
 
 全体構成としてはこのようになりました．これら以外にも環境構築のための ``Docker-compose.yml`` なども書いています．
 
-```php
+```
 ├─php
 └─src
     ├─app
@@ -57,7 +57,7 @@ RUN a2enmod rewrite
 
 ## **Docker-compose.yml**
 
-```
+```yml
 version: '3.7'
 
 services:
@@ -114,7 +114,7 @@ RewriteRule ^(.+)$ index.php [L]
 
 ## **index.php**
 
-```
+```php
 <?php
 
 require_once __DIR__ . "/../vendor/autoload.php";
@@ -146,7 +146,7 @@ $router->response($_SERVER['REQUEST_URI']);
 
 ## **Router**
 
-```
+```php
 <?php
 
 namespace App\Routers;
@@ -184,7 +184,7 @@ class Router
 
 ## **Models**
 
-```
+```php
 <?php
 
 namespace App\Models;
@@ -223,7 +223,7 @@ class model
 
 ただし，正直言ってモデル内での処理がこれだけではよくないかなとは思っているので，アドバイスをいただけますと嬉しいです．
 
-```
+```php
 <?php
 
 namespace App\Models;
@@ -277,7 +277,7 @@ class Blog extends Model
 
 ## **Views**
 
-```
+```php
 <?php
 
 namespace App\Templates;
@@ -298,7 +298,7 @@ class View
 
 これでコントローラー内で ``$view->pages('index');`` と記述することによってページが表示されます．ただしこれはページを表示させるだけの機能なのでリダイレクトなどの機能はついていません．
 
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -322,7 +322,7 @@ class View
 
 ## **Controllers**
 
-```
+```php
 <?php
 
 namespace App\Controllers;
@@ -341,7 +341,7 @@ class Controller
 
 親のコントローラーにはリダイレクトの関数しか書いておらず，子のコントローラーでほとんどの処理を行わせるようになっているので，この辺りももう少し工夫して，子のコントローラーの責務を減らして，親のコントローラーが処理を行えるような実装にしていきたいと思っています．
 
-```
+```php
 <?php
 
 namespace App\Controllers;
