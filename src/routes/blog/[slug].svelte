@@ -1,4 +1,6 @@
 <script context="module">
+	import TwitterShare from '../../components/TwitterShare.svelte';
+
 	export async function preload({ params }) {
 		// the `slug` parameter is available because
 		// this file is called [slug].svelte
@@ -78,4 +80,10 @@
 	</div>
 
 	{@html post.html}
+
+	<TwitterShare
+		text="{post.title}"
+		url="https://jdkfx.com/blog/{post.slug}"
+		hashtags="jdkfx_blog"
+	/>
 </div>
