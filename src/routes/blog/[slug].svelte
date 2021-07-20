@@ -46,6 +46,12 @@
 		margin: 0 0 0.5em 0;
 	}
 
+	.content :global(p) :global(img) {
+		width: 50%;
+		border-radius: 20px;
+		box-shadow: 15px 15px 0px 0 #ff6316;
+	}
+
 	.article-top {
 		margin-bottom: 2em;
 	}
@@ -65,6 +71,10 @@
 	{
 		.content {
 			margin-top: 35%;
+		}
+
+		.content :global(p) :global(img) {
+			width: 100%;
 		}
 	}
 </style>
