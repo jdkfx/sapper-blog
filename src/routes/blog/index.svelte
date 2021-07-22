@@ -14,7 +14,8 @@
 
 <style>
 	ul {
-		margin: 0;
+		width: 90%;
+		margin: auto;
 		padding: 0;
 		line-height: 1.5;
 	}
