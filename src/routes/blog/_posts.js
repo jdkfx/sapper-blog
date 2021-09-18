@@ -15,7 +15,7 @@ import hljs from "highlight.js";
 
 const renderer = new marked.Renderer();
 renderer.code = (code, lang)=>{
-	return `<pre style="background-color: #7b5544;"><code class="${lang} hljs">${hljs.highlightAuto(code, [lang]).value}</code></pre>`;
+	return `<pre style="background-color: black;"><code class="${lang} hljs">${hljs.highlightAuto(code, [lang]).value}</code></pre>`;
 }
 marked.setOptions({
 	breaks: true,
