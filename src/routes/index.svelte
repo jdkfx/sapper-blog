@@ -116,6 +116,25 @@
 	</div>
 	
 	<div class="about-item">
+		<h1 class="bold italic">var_dump($contest);</h1>
+	
+		<div class="italic">
+			<p>[ 第24回HiBisインターネットビジネスフォーラム（学生の部） ] =></p>
+			<p class="padding-left-m">" 最優秀賞, キャンパス賞 - 2020/11/27"</p>
+		</div>
+
+		<div class="italic">
+			<p>[ Japan ビジネスデザイン発見&発表会 η 2020-2021 ] =></p>
+			<p class="padding-left-m">" 地方創生大賞, ナイスビジネス賞 - 2021/03/12 "</p>
+		</div>
+
+		<div class="italic">
+			<p><a href="https://kome100dc.jp/2020/">[ 米百俵デジタルコンテスト2020 ]</a> =></p>
+			<p class="padding-left-m">" 技術賞 - <a href="https://kome100dc.jp/2020/result/100001/">顔バト</a> - 2021/03/18 "</p>
+		</div>
+	</div>
+
+	<div class="about-item">
 		<h1 class="bold italic">var_dump($contribution);</h1>
 	
 		<div class="italic">
