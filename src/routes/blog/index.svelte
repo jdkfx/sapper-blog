@@ -1,15 +1,27 @@
 <script context="module">
-	export function load({ params, query }) {
-		return fetch(`blog.json`).then(r => r.json()).then(posts => {
-			return { posts };
-		});
+	export async function load({ fetch }) {
+		const url = "/blog.json";
+		const res = await fetch(url);
+
+		if (!res.ok) {
+			return {
+				status: res.status,
+				error: new Error(`Nyan!!`),
+			};
+		}
+
+		const { posts } = await res.json();
+		
+		return {
+			props: { posts },
+		}
 	}
 </script>
 
 <script>
 	export let posts;
 
-	// console.log(posts);
+	//console.log(posts);
 </script>
 
 <style>
