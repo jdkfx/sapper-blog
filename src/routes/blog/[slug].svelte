@@ -1,17 +1,24 @@
 <script context="module">
 	import TwitterShare from '../../components/TwitterShare.svelte';
 
-	export async function load({ params }) {
+	export async function load({ fetch }) {
 		// the `slug` parameter is available because
 		// this file is called [slug].svelte
 		const res = await fetch(`blog/${params.slug}.json`);
-		const data = await res.json();
+		const prerender = true;
 
-		if (res.status === 200) {
-			return { post: data };
-		} else {
-			load(res.status, data.message);
+		if (res.ok) {
+			return {
+				props: {
+					post: await res.json(),
+  				}
+			};
 		}
+
+		return {
+			status: res.status,
+			error: new Error(`Could not load this article.`),
+		};
 	}
 </script>
 
