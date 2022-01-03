@@ -6,3 +6,4 @@ yarn-error.log
 
 .vercel
 .svelte-kit
+.vercel_build_output
