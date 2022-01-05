@@ -10,9 +10,7 @@
   },
   "scripts": {
     "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "export": "svelte-kit build",
-    "start": "node build"
+    "build": "svelte-kit build"
   },
   "dependencies": {
     "path": "^0.12.7"
