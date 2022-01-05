@@ -4,14 +4,12 @@
 	export async function load({ fetch, params }) {
 		// the `slug` parameter is available because
 		// this file is called [slug].svelte
-		const res = await fetch(`blog/${params.slug}.json`);
+		const res = await fetch(`/blog/${params.slug}.json`);
 		const prerender = true;
 
 		if (res.ok) {
 			return {
-				props: {
-					post: await res.json(),
-  				}
+				props: await res.json(),
 			};
 		}
 
