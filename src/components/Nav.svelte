@@ -100,7 +100,7 @@
 
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a class="size18" rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">$blogs</a></li>
+		<li><a class="size18" rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="/blog">$blogs</a></li>
 		<li>
 			<div class="my-link">
 				<a href="https://twitter.com/jdkfx" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter fa-3x"></i></a>
