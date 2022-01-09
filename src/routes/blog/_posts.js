@@ -26,7 +26,7 @@ marked.setOptions({
 const posts = [];
 
 try {
-	const articleDir = path.join(process.cwd(), "articles");
+	const articleDir = path.join(process.cwd(), "/articles");
 	const fileList = readdirSync(articleDir);
 	for(const fileName of fileList){
 		if(fileName.length < 4 || fileName.slice(-3) !== ".md")continue;
