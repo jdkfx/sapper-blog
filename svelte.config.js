@@ -1,4 +1,4 @@
-import vercel from '@sveltejs/adapter-vercel';
+import adapter from '@sveltejs/adapter-static';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -9,7 +9,7 @@ const config = {
 	extensions: ['.svelte'],
 
 	kit: {
-		adapter: vercel(),
+		adapter: adapter({ out: 'articles' }),
 		amp: false,
 		appDir: '_app',
 		files: {
