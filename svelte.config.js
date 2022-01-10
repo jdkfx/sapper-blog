@@ -9,7 +9,7 @@ const config = {
 	extensions: ['.svelte'],
 
 	kit: {
-		adapter: adapter({ pages: 'build' }),
+		adapter: adapter({ pages: 'public' }),
 		amp: false,
 		appDir: '_app',
 		files: {
