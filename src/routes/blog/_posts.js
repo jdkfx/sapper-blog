@@ -10,7 +10,7 @@
 import {readdirSync, readFileSync, statSync} from "fs";
 import path from "path";
 import fm from "front-matter";
-import marked from "marked";
+import { marked } from "marked";
 import hljs from "highlight.js";
 
 const renderer = new marked.Renderer();
