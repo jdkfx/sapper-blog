@@ -10,6 +10,10 @@ const config = {
 
 	kit: {
 		adapter: adapter({ pages: 'public' }),
+		browser: {
+			hydrate: true,
+			router: true,
+		},
 		amp: false,
 		appDir: '_app',
 		files: {
@@ -20,7 +24,6 @@ const config = {
 			serviceWorker: 'src/service-worker',
 			template: 'src/app.html'
 		},
-		hydrate: true,
 		package: {
 			dir: 'package',
 			emitTypes: true,
@@ -39,12 +42,10 @@ const config = {
 			entries: ['*'],
 			onError: 'fail'
 		},
-		router: true,
 		serviceWorker: {
 			register: true,
 			files: (filepath) => !/\.DS_STORE/.test(filepath)
 		},
-		ssr: true,
 		trailingSlash: 'never',
 		vite: () => ({})
 	},
