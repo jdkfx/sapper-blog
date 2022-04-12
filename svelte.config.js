@@ -36,6 +36,7 @@ const config = {
 			base: ''
 		},
 		prerender: {
+			default: true,
 			concurrency: 1,
 			crawl: true,
 			enabled: true,
