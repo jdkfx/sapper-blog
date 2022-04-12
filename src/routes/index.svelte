@@ -82,6 +82,12 @@
 				<p class="padding-left-m">" pixiv, Inc. - PIXIV SUMMER BOOTCAMP2021 "</p>
 				<p class="padding-left-m">" Implemented a function using PHP8 Attribute in pixiv Encyclopedia. <a href="https://jdkfx.com/blog/pixiv-summer-bootcamp2021">See more...</a>"</p>
 			</div>
+
+			<div>
+				<p>[ 2022/04 - ] =></p>
+				<p class="padding-left-m">" PR TIMES Inc. - Backend Engineer (Student Internships) "</p>
+				<p class="padding-left-m">" <a href="https://herp.careers/v1/prtimes/yqADIecHef7y">See more...</a>"</p>
+			</div>
 		</div>
 		
 		<div class="about-item">
@@ -140,6 +146,11 @@
 		<div class="italic">
 			<p><a href="https://github.com/svelte-jp/svelte-site-jp">[ svelte-site-jp ]</a> =></p>
 			<p class="padding-left-m">" Translated English document into Japanese. "</p>
+		</div>
+
+		<div class="italic">
+			<p><a href="https://github.com/VOICEVOX/voicevox">[ VOICEVOX ]</a> =></p>
+			<p class="padding-left-m">" Editor UI changes, etc. "</p>
 		</div>
 	</div>
 </div>
