@@ -8,3 +8,4 @@ yarn-error.log
 .svelte-kit
 .vercel_build_output
 /build
+/public
