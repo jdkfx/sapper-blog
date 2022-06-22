@@ -14,7 +14,6 @@ const config = {
 			hydrate: true,
 			router: true,
 		},
-		amp: false,
 		appDir: '_app',
 		files: {
 			assets: 'static',
