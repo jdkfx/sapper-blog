@@ -1,7 +1,8 @@
 {
     "redirects": [
-      { "source": "/blog/articles/:slug", "destination": "blog/:slug" }
+        { "source": "/blog/", "destination": "/blog/" },
+        { "source": "/blog/blog/:slug", "destination": "/blog/:slug" }
     ],
-    "trailingSlash": true,
+    "trailingSlash": false,
     "cleanUrls": true
-  }
+}
