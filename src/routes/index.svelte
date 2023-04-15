@@ -84,7 +84,7 @@
 			</div>
 
 			<div>
-				<p>[ 2022/04 - ] =></p>
+				<p>[ 2022/04 - 2022/10 ] =></p>
 				<p class="padding-left-m">" PR TIMES Inc. - Backend Engineer (Student Internships) "</p>
 				<p class="padding-left-m">" <a href="https://herp.careers/v1/prtimes/yqADIecHef7y">See more...</a>"</p>
 			</div>
